@@ -193,8 +193,8 @@ EOF
 	# Used by healthcheck to make sure it doesn't mistakenly report container
 	# healthy during startup
 	# Put the password into the temporary config file
-	touch /healthcheck.cnf
-	cat >"/healthcheck.cnf" <<EOF
+	touch /var/lib/mysql/healthcheck.cnf
+	cat >"/var/lib/mysql/healthcheck.cnf" <<EOF
 [client]
 user=healthchecker
 socket=${SOCKET}
