@@ -200,7 +200,7 @@ user=healthchecker
 socket=${SOCKET}
 password=healthcheckpass
 EOF
-	touch /var/lib/mysql/mysql-init-complete
+	touch /tmp/mysql-init-complete
 	#chown -R mysql:mysql "$DATADIR"
 	echo "[Entrypoint] Starting MySQL 5.7.20-1.1.2"
 fi
